@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import Header from './Header';
 import Sort from './Sort';
 import '../styles/App.css';
 import TaskHolder from './TaskHolder';
-import { useEffect } from 'react/cjs/react.development';
 
 function App() {
   const [inputText, setInput] = useState('');
