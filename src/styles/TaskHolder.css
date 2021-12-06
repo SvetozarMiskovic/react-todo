@@ -1,0 +1,10 @@
+.task-holder {
+  max-width: 1168px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(27, 27, 27, 0);
+  margin-top: 1.5rem;
+  padding-bottom: 0.1rem;
+  padding-top: 1rem;
+}

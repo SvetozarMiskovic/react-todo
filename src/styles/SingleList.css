@@ -1,0 +1,9 @@
+.list {
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: #4b3869;
+  border-radius: 1rem;
+  color: white;
+}

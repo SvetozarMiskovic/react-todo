@@ -1,0 +1,50 @@
+.todo-input {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.todo-input > * {
+  margin: 0.5rem;
+}
+::placeholder {
+  color: white;
+}
+input[type='text'] {
+  outline: none;
+  width: auto;
+  height: 2.5rem;
+  text-align: center;
+  border: none;
+  background-color: #63b4b8;
+  color: #fff;
+  border-radius: 3%;
+  font-size: 1.2rem;
+  font-family: 'Architects Daughter', cursive;
+}
+input[type='submit'] {
+  position: relative;
+  width: 50%;
+  height: 2rem;
+  background-color: #63b4b8;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 2%;
+  cursor: pointer;
+  left: 50%;
+
+  transform: translateX(-50%);
+  transition: ease-out 0.2s;
+
+  font-size: 1.2rem;
+  font-family: 'Architects Daughter', cursive;
+}
+
+input[type='submit']:hover {
+  transition: ease-out 0.2s;
+  background-color: #498b8f;
+  color: #4b3869;
+}

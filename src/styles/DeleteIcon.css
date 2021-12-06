@@ -1,0 +1,12 @@
+.deleteList {
+  font-size: 1.3rem;
+  color: white;
+  position: relative;
+  right: -48%;
+  top: 0.7rem;
+}
+
+.deleteList:hover {
+  color: rgb(122, 29, 29);
+  cursor: pointer;
+}

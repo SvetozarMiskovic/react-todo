@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  max-width: 1168px;
+  align-content: center;
+  justify-content: center;
+  background-color: #4b3869;
+  font-family: inherit;
+  border-radius: 1.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}

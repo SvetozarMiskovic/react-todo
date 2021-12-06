@@ -1,0 +1,47 @@
+.todo-select {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+select,
+option {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+  height: 2rem;
+  width: 40%;
+  margin-top: 1rem;
+  text-align: center;
+  border: none;
+  background-color: #63b4b8;
+  font-size: 1.2rem;
+  color: #fff;
+
+  cursor: pointer;
+  border-radius: 3%;
+}
+.newListBtn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-48.5%);
+  text-align: center;
+  width: 50%;
+  height: 2rem;
+  background-color: #63b4b8;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 2%;
+  cursor: pointer;
+
+  transition: ease-out 0.2s;
+  font-size: 1.2rem;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.newListBtn:hover {
+  transition: ease-out 0.2s;
+  background-color: #498b8f;
+  color: #4b3869;
+}
