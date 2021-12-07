@@ -49,9 +49,11 @@ option {
 @media screen and (max-width: 768px) {
   .newListBtn {
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
   }
   select,
   option {
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
   }
 }

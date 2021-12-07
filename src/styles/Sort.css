@@ -28,8 +28,10 @@
 @media (max-width: 768px) {
   .sort {
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
   }
   #sort {
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
   }
 }

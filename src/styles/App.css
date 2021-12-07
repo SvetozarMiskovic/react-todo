@@ -6,3 +6,9 @@
 body {
   background-color: rgba(27, 27, 27, 0.87);
 }
+
+@media (max-width: 768px) {
+  .App {
+    font-family: Helvetica, sans-serif;
+  }
+}
