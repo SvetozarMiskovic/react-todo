@@ -4,6 +4,7 @@ import Header from './Header';
 import Sort from './Sort';
 import '../styles/App.css';
 import TaskHolder from './TaskHolder';
+import ClearAll from './ClearAll';
 
 function App() {
   const [inputText, setInput] = useState('');
@@ -86,7 +87,9 @@ function App() {
       })
     );
   }
-
+  function clearAllHandler() {
+    setLists([]);
+  }
   return (
     <div className="App">
       <Header
@@ -103,6 +106,8 @@ function App() {
         removeList={removeListHandler}
         lists={lists}
       />
+
+      <ClearAll lists={lists} clearAll={clearAllHandler} />
     </div>
   );
 }
