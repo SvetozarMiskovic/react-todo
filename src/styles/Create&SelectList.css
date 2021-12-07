@@ -15,9 +15,9 @@ option {
   text-align: center;
   border: none;
   background-color: #63b4b8;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #fff;
-
+  font-family: inherit;
   cursor: pointer;
   border-radius: 3%;
 }

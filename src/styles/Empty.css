@@ -1,0 +1,15 @@
+.empty {
+  position: relative;
+  color: white;
+  margin-top: 1rem;
+  font-size: 2rem;
+  background-color: #4b3869;
+  max-width: 1168px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1rem;
+}
+
+.empty h2 {
+  padding-top: 1rem;
+}
