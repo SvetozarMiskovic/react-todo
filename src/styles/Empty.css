@@ -13,3 +13,9 @@
 .empty h2 {
   padding-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  .empty h2 {
+    width: 100%;
+  }
+}

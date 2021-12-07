@@ -32,9 +32,9 @@ input[type='submit'] {
   outline: none;
   border: none;
   color: #fff;
-  border-radius: 2%;
+  border-radius: 1rem;
   cursor: pointer;
-  left: 50%;
+  left: 49.5%;
 
   transform: translateX(-50%);
   transition: ease-out 0.2s;
@@ -47,4 +47,13 @@ input[type='submit']:hover {
   transition: ease-out 0.2s;
   background-color: #498b8f;
   color: #4b3869;
+}
+
+@media (max-width: 768px) {
+  input[type='submit'] {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-52%);
+  }
 }

@@ -24,7 +24,7 @@ option {
 .newListBtn {
   position: relative;
   left: 50%;
-  transform: translateX(-48.5%);
+  transform: translateX(-50%);
   text-align: center;
   width: 50%;
   height: 2rem;
@@ -32,7 +32,7 @@ option {
   outline: none;
   border: none;
   color: #fff;
-  border-radius: 2%;
+  border-radius: 1rem;
   cursor: pointer;
 
   transition: ease-out 0.2s;
@@ -44,4 +44,14 @@ option {
   transition: ease-out 0.2s;
   background-color: #498b8f;
   color: #4b3869;
+}
+
+@media screen and (max-width: 768px) {
+  .newListBtn {
+    width: 100%;
+  }
+  select,
+  option {
+    width: 100%;
+  }
 }

@@ -10,3 +10,10 @@
   color: rgb(122, 29, 29);
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .deleteList {
+    position: relative;
+    right: -45%;
+  }
+}

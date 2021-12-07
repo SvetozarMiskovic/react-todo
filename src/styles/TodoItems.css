@@ -26,11 +26,18 @@ li {
   list-style: none;
   border-bottom: 1px solid #a9e4d7;
   left: 50%;
-  transform: translateX(-51.5%);
+  transform: translateX(-51.8%);
   margin-bottom: 1rem;
   word-break: break-all;
   padding-bottom: 0.3rem;
 }
 span {
-  padding-left: 0.6rem;
+  padding-left: 0.5rem;
+}
+@media (max-width: 768px) {
+  li {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-54.5%);
+  }
 }

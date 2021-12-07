@@ -24,3 +24,12 @@
 
   transform: translateX(-50%);
 }
+
+@media (max-width: 768px) {
+  .sort {
+    width: 100%;
+  }
+  #sort {
+    width: 100%;
+  }
+}
