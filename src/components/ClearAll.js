@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/ClearAll.css';
 function ClearAll(props) {
-  if (props.lists.length === 0) {
+  if (!props.lists.length) {
     return null;
   } else
     return (

@@ -3,7 +3,7 @@ import '../styles/TaskHolder.css';
 import Empty from './Empty';
 import SingleList from './SingleList';
 function TaskHolder(props) {
-  if (props.lists.length === 0) {
+  if (!props.lists.length) {
     return <Empty />;
   } else
     return (
