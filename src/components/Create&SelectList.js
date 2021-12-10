@@ -3,6 +3,7 @@ import '../styles/Create&SelectList.css';
 import Option from './Option';
 
 function CreateSelectList(props) {
+  props.lists.sort(props.sort === 'asc' ? props.compareAsc : props.compareDesc);
   return (
     <div className="todo-select">
       <button

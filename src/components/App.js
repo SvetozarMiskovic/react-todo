@@ -91,6 +91,14 @@ function App() {
   function clearAllHandler() {
     setLists([]);
   }
+
+  function compareAsc(a, b) {
+    return b.edit - a.edit;
+  }
+
+  function compareDesc(a, b) {
+    return a.edit - b.edit;
+  }
   return (
     <div className="App">
       <Header
@@ -100,6 +108,9 @@ function App() {
         setTaskToList={setTaskToListHandler}
         createTaskAndList={createTaskAndListHandler}
         lists={lists}
+        compareAsc={compareAsc}
+        compareDesc={compareDesc}
+        sort={sort}
       />
       <Sort lists={lists} setLists={setLists} sort={sort} setSort={setSort} />
       <TaskHolder
@@ -108,6 +119,8 @@ function App() {
         lists={lists}
         sort={sort}
         setLists={setLists}
+        compareAsc={compareAsc}
+        compareDesc={compareDesc}
       />
 
       <ClearAll lists={lists} clearAll={clearAllHandler} />

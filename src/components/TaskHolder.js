@@ -3,19 +3,13 @@ import '../styles/TaskHolder.css';
 import Empty from './Empty';
 import SingleList from './SingleList';
 
-function compareAsc(a, b) {
-  return b.edit - a.edit;
-}
-
-function compareDesc(a, b) {
-  return a.edit - b.edit;
-}
-
 function TaskHolder(props) {
   if (!props.lists.length) {
     return <Empty />;
   } else {
-    props.lists.sort(props.sort === 'asc' ? compareAsc : compareDesc);
+    props.lists.sort(
+      props.sort === 'asc' ? props.compareAsc : props.compareDesc
+    );
 
     return (
       <div className="task-holder">

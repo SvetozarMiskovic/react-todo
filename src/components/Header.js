@@ -16,6 +16,9 @@ function Header(props) {
       <CreateSelectList
         lists={props.lists}
         setListInformation={props.setListInformation}
+        compareAsc={props.compareAsc}
+        compareDesc={props.compareDesc}
+        sort={props.sort}
       />
     </div>
   );
