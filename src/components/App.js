@@ -12,6 +12,7 @@ function App() {
     const lsLists = JSON.parse(localStorage.getItem('Lists'));
     return lsLists ? lsLists : [];
   });
+  const [sort, setSort] = useState('asc');
 
   function setInputTextHandler(e) {
     const value = e.target.value;
@@ -100,11 +101,13 @@ function App() {
         createTaskAndList={createTaskAndListHandler}
         lists={lists}
       />
-      <Sort lists={lists} setLists={setLists} />
+      <Sort lists={lists} setLists={setLists} sort={sort} setSort={setSort} />
       <TaskHolder
         removeTodo={removeTodoHandler}
         removeList={removeListHandler}
         lists={lists}
+        sort={sort}
+        setLists={setLists}
       />
 
       <ClearAll lists={lists} clearAll={clearAllHandler} />
